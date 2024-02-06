@@ -1,11 +1,6 @@
 # Android Test Report Action
 
-[![Release](https://img.shields.io/github/release/asadmansr/android-test-report-action.svg)](https://github.com/asadmansr/android-test-report-action/releases)
-[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-orange.svg)](https://github.com/marketplace/actions/android-test-report-action)
-
 GitHub Action that prints Android test xml reports.
-
-![action](./images/promo.png)
 
 <br>
 
@@ -15,7 +10,7 @@ Add the following action to your GitHub Actions workflow.
 
 ```yml
 - name: Android Test Report
-  uses: asadmansr/android-test-report-action@v1.2.0
+  uses: holybear/android-test-report-action@v1.2.0
 ```
 
 <br>
@@ -46,7 +41,7 @@ jobs:
         run: ./gradlew testDebugUnitTest
 
       - name: Android Test Report
-        uses: asadmansr/android-test-report-action@v1.2.0
+        uses: holybear/android-test-report-action@v1.2.0
         if: ${{ always() }} # IMPORTANT: run Android Test Report regardless
 ```
 #### Note
@@ -85,7 +80,7 @@ jobs:
           name: reports
 
       - name: Android Test Report
-        uses: asadmansr/android-test-report-action@v1.2.0
+        uses: holybear/android-test-report-action@v1.2.0
 ```
 
 <br>
@@ -95,11 +90,6 @@ jobs:
 ![action](./images/output.png)
 
 <br>
-
-## Sample Project
-
-To learn how to use this action in an Android application, check out the following example repository:
-https://github.com/asadmansr/android-test-report-action-example
 
 - master branch: Passed pipeline as all the tests passed
 - failed-pipeline branch: Failed pipeline as some of the tests failed
