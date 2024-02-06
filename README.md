@@ -10,7 +10,7 @@ Add the following action to your GitHub Actions workflow.
 
 ```yml
 - name: Android Test Report
-  uses: holybear/android-test-report-action@v1.2.0
+  uses: holybear/android-test-report-action@v1.0.0
 ```
 
 <br>
@@ -41,7 +41,7 @@ jobs:
         run: ./gradlew testDebugUnitTest
 
       - name: Android Test Report
-        uses: holybear/android-test-report-action@v1.2.0
+        uses: holybear/android-test-report-action@v1.0.0
         if: ${{ always() }} # IMPORTANT: run Android Test Report regardless
 ```
 #### Note
@@ -80,7 +80,7 @@ jobs:
           name: reports
 
       - name: Android Test Report
-        uses: holybear/android-test-report-action@v1.2.0
+        uses: holybear/android-test-report-action@v1.0.0
 ```
 
 <br>
